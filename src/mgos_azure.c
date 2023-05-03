@@ -37,7 +37,7 @@ static void mgos_azure_mqtt_connect(struct mg_connection *c,
   uint64_t exp = (int64_t) mg_time() + ctx->token_ttl;
   struct mg_str tok = MG_NULL_STR;
   char *uri = NULL;
-  mg_asprintf(&uri, 0, "%s/%s/api-version=2016-11-14", ctx->host_name,
+  mg_asprintf(&uri, 0, "%s/%s/api-version=2021-04-12", ctx->host_name,
               ctx->device_id);
   opts->user_name = uri;
   tok =
